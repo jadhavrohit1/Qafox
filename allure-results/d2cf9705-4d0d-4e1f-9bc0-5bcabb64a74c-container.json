@@ -1,0 +1,1 @@
+{"uuid":"d2cf9705-4d0d-4e1f-9bc0-5bcabb64a74c","name":"testClass.TC_001_Registration","children":["1260f5f3-7885-45c1-bd2f-e18201088263"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1764615877766,"stop":1764615881540}],"afters":[],"start":1764615877713,"stop":1764615884530}

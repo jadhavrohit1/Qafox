@@ -1,0 +1,6 @@
+04:54:44.733 [main] INFO  testClass.TC_002_Login -   Login test cases started ***
+04:54:45.008 [main] INFO  testClass.TC_002_Login - *** Clicked on the MyAccount link ***
+04:54:50.444 [main] INFO  testClass.TC_002_Login - *** Clicked on the login link ***
+04:54:50.652 [main] INFO  testClass.TC_002_Login - *** Entered username ***
+04:54:50.780 [main] INFO  testClass.TC_002_Login - *** Entered password ***
+04:54:51.684 [main] INFO  testClass.TC_002_Login - *** Clicked on the login button ***

@@ -1,0 +1,51 @@
+00:25:48.945 [main] INFO  testClass.TC_001_Registration - *** Test case started
+00:25:49.176 [main] INFO  testClass.TC_001_Registration - ***clicked on the myaccount ***
+00:25:49.765 [main] INFO  testClass.TC_001_Registration - ***clicked on the Register tab ***
+00:25:49.886 [main] INFO  testClass.TC_001_Registration - ***Entered first name ***
+00:25:49.996 [main] INFO  testClass.TC_001_Registration - ***Entered last name ***
+00:25:50.150 [main] INFO  testClass.TC_001_Registration - ***Entered email ID ***
+00:25:50.285 [main] INFO  testClass.TC_001_Registration - ***Entered Mobile number ***
+00:25:50.381 [main] INFO  testClass.TC_001_Registration - ***Entered password ***
+00:25:50.470 [main] INFO  testClass.TC_001_Registration - ***Entered Confirm password ***
+00:25:50.581 [main] INFO  testClass.TC_001_Registration - ***clicked on the privacyPolicy Checkbox ***
+00:25:51.455 [main] INFO  testClass.TC_001_Registration - ***Clicked on the continue button ***
+00:25:51.508 [main] INFO  testClass.TC_001_Registration - ***Received confirmation message ***
+00:34:41.637 [main] INFO  testClass.TC_001_Registration - *** Test case started
+00:34:41.860 [main] INFO  testClass.TC_001_Registration - ***clicked on the myaccount ***
+00:34:42.455 [main] INFO  testClass.TC_001_Registration - ***clicked on the Register tab ***
+00:34:42.591 [main] INFO  testClass.TC_001_Registration - ***Entered first name ***
+00:34:42.722 [main] INFO  testClass.TC_001_Registration - ***Entered last name ***
+00:34:42.857 [main] INFO  testClass.TC_001_Registration - ***Entered email ID ***
+00:34:42.985 [main] INFO  testClass.TC_001_Registration - ***Entered Mobile number ***
+00:34:43.071 [main] INFO  testClass.TC_001_Registration - ***Entered password ***
+00:34:43.180 [main] INFO  testClass.TC_001_Registration - ***Entered Confirm password ***
+00:34:43.287 [main] INFO  testClass.TC_001_Registration - ***clicked on the privacyPolicy Checkbox ***
+00:34:44.217 [main] INFO  testClass.TC_001_Registration - ***Clicked on the continue button ***
+00:34:44.290 [main] INFO  testClass.TC_001_Registration - ***Received confirmation message ***
+01:01:57.441 [main] INFO  testClass.TC_001_Registration - *** Test case started
+01:01:57.671 [main] INFO  testClass.TC_001_Registration - ***clicked on the myaccount ***
+01:01:58.455 [main] INFO  testClass.TC_001_Registration - ***clicked on the Register tab ***
+01:01:58.666 [main] INFO  testClass.TC_001_Registration - ***Entered first name ***
+01:01:58.831 [main] INFO  testClass.TC_001_Registration - ***Entered last name ***
+01:01:59.001 [main] INFO  testClass.TC_001_Registration - ***Entered email ID ***
+01:01:59.137 [main] INFO  testClass.TC_001_Registration - ***Entered Mobile number ***
+01:01:59.256 [main] INFO  testClass.TC_001_Registration - ***Entered password ***
+01:01:59.369 [main] INFO  testClass.TC_001_Registration - ***Entered Confirm password ***
+01:01:59.493 [main] INFO  testClass.TC_001_Registration - ***clicked on the privacyPolicy Checkbox ***
+01:02:00.418 [main] INFO  testClass.TC_001_Registration - ***Clicked on the continue button ***
+01:02:00.508 [main] INFO  testClass.TC_001_Registration - ***Received confirmation message ***
+01:05:27.171 [main] INFO  testClass.TC_001_Registration - *** Test case started
+01:05:27.397 [main] INFO  testClass.TC_001_Registration - ***clicked on the myaccount ***
+01:05:27.933 [main] INFO  testClass.TC_001_Registration - ***clicked on the Register tab ***
+01:05:28.061 [main] INFO  testClass.TC_001_Registration - ***Entered first name ***
+01:05:28.187 [main] INFO  testClass.TC_001_Registration - ***Entered last name ***
+01:05:28.306 [main] INFO  testClass.TC_001_Registration - ***Entered email ID ***
+01:05:28.420 [main] INFO  testClass.TC_001_Registration - ***Entered Mobile number ***
+01:05:28.520 [main] INFO  testClass.TC_001_Registration - ***Entered password ***
+01:05:28.611 [main] INFO  testClass.TC_001_Registration - ***Entered Confirm password ***
+01:05:28.746 [main] INFO  testClass.TC_001_Registration - ***clicked on the privacyPolicy Checkbox ***
+01:05:29.922 [main] INFO  testClass.TC_001_Registration - ***Clicked on the continue button ***
+01:05:29.981 [main] INFO  testClass.TC_001_Registration - ***Received confirmation message ***
+01:05:33.518 [main] INFO  testClass.TC_002_Login -   Login test cases started ***
+01:05:33.697 [main] INFO  testClass.TC_002_Login - *** Clicked on the MyAccount link ***
+01:05:39.029 [main] INFO  testClass.TC_002_Login - *** Clicked on the login link ***
