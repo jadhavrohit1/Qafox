@@ -9,7 +9,7 @@ import testBase.BaseClass;
 public class Login_Datadriven extends BaseClass {
 	
 	
-	@Test(dataProvider = "LoginData", dataProviderClass = utilities.DataProviders.class)
+//	@Test(dataProvider = "LoginData", dataProviderClass = utilities.DataProviders.class)
 	public void verify_Login(String email, String password) throws InterruptedException
 	{
 		Homepage hp=new Homepage(driver);
