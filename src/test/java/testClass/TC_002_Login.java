@@ -21,7 +21,6 @@ public class TC_002_Login extends BaseClass {
     	
 		loginPage lp=new loginPage(driver);
 		
-		
 		lp.clickLogingLink();
     	logger.info("*** Clicked on the login link ***");
 	
@@ -37,6 +36,8 @@ public class TC_002_Login extends BaseClass {
 		
     	logger.info("*** Clicked on the login button ***");
 
+    	
+    	
 	}
 	
 
