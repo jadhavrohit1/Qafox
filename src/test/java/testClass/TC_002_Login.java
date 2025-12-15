@@ -19,15 +19,13 @@ public class TC_002_Login extends BaseClass {
     	hp.clickMyAcc();
     	logger.info("*** Clicked on the MyAccount link ***");
     	
-		Thread.sleep(5000);
 		loginPage lp=new loginPage(driver);
 		
 		
 		lp.clickLogingLink();
     	logger.info("*** Clicked on the login link ***");
-
-		
-		lp.setUsername(p.getProperty("email"));
+	
+    	lp.setUsername(p.getProperty("email"));
 		
     	logger.info("*** Entered username ***");
 
