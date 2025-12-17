@@ -24,14 +24,14 @@ public class Excelutility {
 	    Object[][] data = new Object[totalrows][totalcells];
 
 		
-		for (int i=0; i<totalrows; i++)
+		for (int i=1; i<totalrows; i++)
 		{
 			XSSFRow row=sheet.getRow(i);
 			
 			for (int c=0; c<totalcells; c++)
 			{
 				XSSFCell cell=row.getCell(c);
-				data[i][c]=cell.toString();
+				data[i-1][c]=cell.toString();
 			}
 		}
 		   workbook.close();

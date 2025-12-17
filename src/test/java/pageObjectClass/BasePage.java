@@ -5,7 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class BasePage {
 	
-	//constructor - //We are expecting driver from testbase class
+	//constructor - //We are expecting driver from base class
 	
 	WebDriver driver;
 	
@@ -15,9 +15,5 @@ public class BasePage {
 		PageFactory.initElements(driver, this);
 		
 	}
-	
-	
-	
-	
 
 }
