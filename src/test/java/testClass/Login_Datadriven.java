@@ -23,7 +23,7 @@ public class Login_Datadriven extends BaseClass {
 		loginPage lp=new loginPage(driver);
 		
 		
-		lp.clickLogingLink();
+		hp.clickLogingLink();
     	logger.info("*** Clicked on the login link ***");
 		
 		lp.setUsername(email);

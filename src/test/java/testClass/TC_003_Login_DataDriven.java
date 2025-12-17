@@ -7,24 +7,27 @@ import pageObjectClass.loginPage;
 import testBase.BaseClass;
 import utilities.DataProviders;
 
-public class TC_002_Login extends BaseClass {
+public class TC_003_Login_DataDriven extends BaseClass {
 	
-	@Test
+	@Test(dataProvider="LoginData", dataProviderClass=DataProviders.class)
 	public void verify_Login() throws InterruptedException
 	{
 		Homepage hp=new Homepage(driver);
 		
 		logger.info("  Login test cases started ***");
-    	
-    	hp.clickLogingLink();
-    	logger.info("*** Clicked on the login link ***");
+		
+    	hp.clickMyAcc();
+    	logger.info("*** Clicked on the MyAccount link ***");
     	
 		loginPage lp=new loginPage(driver);
 		
-    	lp.setUsername(p.getProperty("email"));
+		hp.clickLogingLink();
+    	logger.info("*** Clicked on the login link ***");
+	
+    	lp.setUsername("email");
     	logger.info("*** Entered username ***");
 
-		lp.setPassword(p.getProperty("pass"));
+		lp.setPassword("pass");
 		
     	logger.info("*** Entered password ***");
 

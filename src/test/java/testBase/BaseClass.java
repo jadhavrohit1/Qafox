@@ -21,6 +21,9 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
+import pageObjectClass.Homepage;
+import pageObjectClass.loginPage;
+
 public class BaseClass 
 
 
@@ -76,6 +79,24 @@ public class BaseClass
 	    	driver.quit();
 	    }
 	
+	    
+	//Reauable method if needed
+	    
+	    public void doLogin()
+	    {
+	    	Homepage hp=new Homepage(driver);
+	    	hp.clickLogingLink();
+	    	
+	    	loginPage lp=new loginPage(driver);
+	    	lp.setUsername(p.getProperty("email"));
+	    	lp.setPassword(p.getProperty("pass"));
+	    	lp.clickLoginBtn();
+	    	
+	    }
+	    
+	    
+	    
+	    
 }
 	
 	

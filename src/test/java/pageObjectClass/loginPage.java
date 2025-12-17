@@ -18,7 +18,7 @@ public class loginPage extends BasePage {
 	
 	// locators
 	
-	@FindBy(linkText="Login") WebElement loginlink;
+	
 	@FindBy(xpath="//*[@id='input-email']") WebElement txt_Username;
 	@FindBy(id="input-password") WebElement txt_Password;
 	@FindBy(xpath="//*[@type='submit']") WebElement login_btn;
@@ -26,10 +26,7 @@ public class loginPage extends BasePage {
 	
 	//Action methods
 	
-	public void clickLogingLink()
-	{
-		loginlink.click();
-	}
+	
 	
    public void setUsername(String email)
    
