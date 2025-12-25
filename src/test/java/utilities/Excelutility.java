@@ -24,7 +24,7 @@ public class Excelutility {
 	    Object[][] data = new Object[totalrows][totalcells];
 
 		
-		for (int i=1; i<totalrows; i++)
+		for (int i=1; i<=totalrows; i++)
 		{
 			XSSFRow row=sheet.getRow(i);
 			

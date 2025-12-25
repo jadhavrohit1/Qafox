@@ -1,4 +1,7 @@
-package utilities;
+package listeners;
+
+import java.io.File;
+import java.io.IOException;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -8,7 +11,10 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-public class ExtentListener implements ITestListener {
+import utilities.ExtentReportManager;
+import utilities.ScreenshotUtil;
+
+public class ExtentListener implements ITestListener  {
 
     private static ExtentReports extent = ExtentReportManager.getInstance();
     private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
@@ -26,7 +32,21 @@ public class ExtentListener implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult result) {
-        test.get().log(Status.FAIL, result.getThrowable());
+    	test.get().fail(result.getThrowable());
+        
+        File screenshotPath = null;
+		try {
+			screenshotPath = ScreenshotUtil.captureScreenshot(result.getMethod().getMethodName());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        
+        // Attach screenshot to Extent Report
+        if (screenshotPath != null) {
+            test.get().addScreenCaptureFromPath(screenshotPath.getAbsolutePath());
+        }
+        
     }
 
     @Override
