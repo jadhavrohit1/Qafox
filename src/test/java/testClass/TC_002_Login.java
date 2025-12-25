@@ -1,15 +1,17 @@
 package testClass;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import Base.BaseClass;
 import pageObjectClass.Homepage;
 import pageObjectClass.loginPage;
-import testBase.BaseClass;
-import utilities.DataProviders;
+import listeners.RetryAnalyzer;
+
 
 public class TC_002_Login extends BaseClass {
 	
-	@Test
+	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void verify_Login() throws InterruptedException
 	{
 		Homepage hp=new Homepage(driver);
@@ -33,7 +35,7 @@ public class TC_002_Login extends BaseClass {
     	logger.info("*** Clicked on the login button ***");
 
     	
-    	
+    	Assert.fail("Failing intentionally to test retry logic");
 	}
 	
 

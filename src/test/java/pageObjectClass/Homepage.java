@@ -3,6 +3,9 @@ package pageObjectClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import Base.BasePage;
 
 public class Homepage extends BasePage {
 	
@@ -38,8 +41,12 @@ public class Homepage extends BasePage {
 	
 	public void clickLogingLink()
 	{
-		mAcc.click();
-		loginlink.click();
+		
+		wait.until(ExpectedConditions.elementToBeClickable(mAcc)).click();
+		wait.until(ExpectedConditions.elementToBeClickable(loginlink)).click();
+		
+		//mAcc.click();
+		//loginlink.click();
 	}
 	
 

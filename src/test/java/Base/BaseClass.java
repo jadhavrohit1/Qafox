@@ -1,4 +1,4 @@
-package testBase;
+package Base;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -13,6 +13,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -44,7 +45,7 @@ public class BaseClass
 	    }
 	    
 	    
-	    @BeforeTest
+	    @BeforeMethod
 	    @Parameters({"os","browser"})
 		public void setUp(String os, String browser, ITestContext context) throws IOException
 		{    	
@@ -57,6 +58,8 @@ public class BaseClass
 			
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			driver.manage().window().maximize();
+	    	driver.get(p.getProperty("appURL"));
+
 		} 
 	    
 	    
@@ -65,15 +68,17 @@ public class BaseClass
 	        logger = LogManager.getLogger(this.getClass());
 	    }
 	    
-	    
-	    @BeforeMethod
+	  /*  
+	   @BeforeMethod
 	    public void launchApp()
 	    {
 	    	driver.get(p.getProperty("appURL"));
 	    }
+	*/
 	    
 	    
-	    @AfterTest
+	    
+	    @AfterMethod
 	    public void tearDown()
 	    {
 	    	driver.quit();
@@ -93,6 +98,10 @@ public class BaseClass
 	    	lp.clickLoginBtn();
 	    	
 	    }
+	    
+	
+	    
+	    
 	    
 	    
 	    

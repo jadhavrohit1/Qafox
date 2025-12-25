@@ -8,9 +8,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import Base.BaseClass;
 import pageObjectClass.Homepage;
 import pageObjectClass.Registration;
-import testBase.BaseClass;
 
 public class TC_001_Registration extends BaseClass {
 	

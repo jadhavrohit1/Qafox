@@ -8,6 +8,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import Base.BasePage;
+
 public class loginPage extends BasePage {
 	
 	// constructor invoke
@@ -31,7 +33,6 @@ public class loginPage extends BasePage {
    public void setUsername(String email)
    
    {
-	   WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
 	   wait.until(ExpectedConditions.visibilityOf(txt_Username));
 	   wait.until(ExpectedConditions.elementToBeClickable(txt_Username)); 
 	   txt_Username.click();

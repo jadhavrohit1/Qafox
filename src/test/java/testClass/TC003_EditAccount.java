@@ -2,9 +2,9 @@ package testClass;
 
 import org.testng.annotations.Test;
 
+import Base.BaseClass;
 import pageObjectClass.EditAcc;
 import pageObjectClass.loginPage;
-import testBase.BaseClass;
 
 public class TC003_EditAccount extends BaseClass {
 	
